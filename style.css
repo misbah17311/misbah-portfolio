@@ -9,6 +9,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0a0f24;
   color: #d1d5db;
+  line-height: 1.6;
 }
 
 html {
@@ -40,9 +41,8 @@ html {
 }
 
 .heroLeft h3 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-top: 1.5rem;
-  line-height: 1.6;
   color: #cbd5e1;
 }
 
@@ -74,6 +74,7 @@ html {
 .aboutSection {
   padding: 4rem 6rem;
   background: linear-gradient(to right, #0a0f24, #1f2a55);
+  font-size: 1.15rem;
 }
 
 .aboutContent {
@@ -89,26 +90,30 @@ html {
   min-width: 300px;
 }
 
+.aboutContentLeft p {
+  margin-bottom: 1.2rem;
+}
+
 .aboutContentRight h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #3fb8f9;
   margin-bottom: 1rem;
 }
 
 .eduInstitution {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #e0f2fe;
   margin-bottom: 0.5rem;
 }
 
 .eduDept {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #cbd5e1;
 }
 
 .aboutSection .sectionTitle {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   text-align: center;
   margin-bottom: 2rem;
   color: #63f7f2;
@@ -208,6 +213,7 @@ html {
   padding: 4rem 6rem;
   background: linear-gradient(to right, #0a0f24, #1f2a55);
   text-align: center;
+  font-size: 1.1rem;
 }
 
 .contactContent {
@@ -219,17 +225,19 @@ html {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  margin-top: 1.5rem;
 }
 
 .contactCard {
   background-color: #172948;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 260px;
 }
 
 .contactCard:hover {
@@ -247,6 +255,7 @@ html {
   text-decoration: none;
   font-weight: 500;
   margin-top: 0.5rem;
+  word-break: break-word;
 }
 
 .contactCard a:hover {
@@ -284,5 +293,9 @@ html {
   .contactCards {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .contactCard {
+    width: 90%;
   }
 }
