@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Misbah Ur Rahman | Portfolio</title>
+  <title>MD Misbah Ur Rahman | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<script src="script.js"></script>
 <body>
 
-<section class="hero">
+<header class="hero">
   <div class="heroLeft">
     <h1>Hi</h1>
     <h1>I am <span class="highlight">MD Misbah Ur Rahman</span></h1>
@@ -18,170 +17,171 @@
       I explore the convergence of <strong>AI</strong> and <strong>systems</strong>—with projects in <strong>5G</strong>, <strong>scheduling</strong>, and <strong>generative tools</strong>.
     </h3>
   </div>
-  <div class="heroRight">
+  <nav class="heroRight">
     <a href="#projects" class="heroBtn">View Projects</a>
-    <a href="#contact" class="heroBtn">Contact Me</a>
-    <a href="#about" class="heroBtn">About Me</a>
     <a href="#research" class="heroBtn">Research</a>
-  </div>
-</section>
+    <a href="#about" class="heroBtn">About Me</a>
+    <a href="#contact" class="heroBtn">Contact Me</a>
+  </nav>
+</header>
 
-<section id="about" class="aboutSection">
-  <h2 class="sectionTitle">About Me</h2>
-  <div class="aboutContent">
-    <div class="aboutContentLeft">
-      <p>
-        Hello! I'm <strong>MD Misbah Ur Rahman</strong>, a <strong>pre-final year undergraduate</strong> at <strong>IIT Kharagpur</strong>, specializing in <strong>machine learning</strong>, <strong>reinforcement learning</strong>, and <strong>intelligent systems</strong>.
-      </p>
-      <p>
-        I apply AI to real-world systems—spanning <strong>telecom networks</strong>, <strong>recommendation engines</strong>, and <strong>generative tools</strong>. I thrive at the intersection of <strong>theory</strong> and <strong>application</strong>, and often take on <strong>leadership roles</strong> in collaborative projects.
-      </p>
-      <p>
-        Beyond academics, I’m deeply curious about making intelligent systems more <strong>practical</strong>, <strong>efficient</strong>, and <strong>impactful</strong>.
-      </p>
+<main>
+  <section id="about" class="aboutSection">
+    <h2 class="sectionTitle">About Me</h2>
+    <div class="aboutContent">
+      <div class="aboutContentLeft">
+        <p>
+          Hello! I'm <strong>MD Misbah Ur Rahman</strong>, a <strong>pre-final year undergraduate</strong> at <strong>IIT Kharagpur</strong>, specializing in <strong>machine learning</strong>, <strong>reinforcement learning</strong>, and <strong>intelligent systems</strong>.
+        </p>
+        <p>
+          I apply AI to real-world systems—spanning <strong>telecom networks</strong>, <strong>recommendation engines</strong>, and <strong>generative tools</strong>. I thrive at the intersection of <strong>theory</strong> and <strong>application</strong>, and often take on <strong>leadership roles</strong> in collaborative projects.
+        </p>
+        <p>
+          Beyond academics, I’m deeply curious about making intelligent systems more <strong>practical</strong>, <strong>efficient</strong>, and <strong>impactful</strong>.
+        </p>
+      </div>
+
+      <div class="aboutContentRight">
+        <h2>Institution</h2>
+        <h3 class="eduInstitution">Indian Institute of Technology, Kharagpur</h3>
+        <p class="eduDept">Department of Chemical Engineering</p>
+      </div>
     </div>
+  </section>
 
-    <div class="aboutContentRight">
-      <h2>Institution</h2>
-      <h3 class="eduInstitution">Indian Institute of Technology, Kharagpur</h3>
-      <p class="eduDept">Department of Chemical Engineering</p>
+  <section id="research" class="projectsSection">
+    <h2 class="sectionTitle">Research</h2>
+    <div class="projectsContainer">
+      <div class="projectCard">
+        <h3 class="projectTitle">PPO-Based MAC Scheduling</h3>
+        <p class="projectInfo">
+          Developed a PPO agent for RB allocation in 5G MAC layer with priority encoding. Optimized HARQ performance and latency.
+        </p>
+        <a href="https://github.com/misbah17311/Intelligent-MAC-Layer-Resource-Block-Allocation" target="_blank" class="projectLink">GitHub</a>
+        <a href="https://drive.google.com/file/d/1gul7y1VvfGcqq-oS-ESe9-4PH840v0NN/view?usp=sharing" target="_blank" class="projectLink">Paper</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="research" class="projectsSection">
-  <h2 class="sectionTitle">Research</h2>
-  <div class="projectsContainer">
-    <div class="projectCard">
-      <h3 class="projectTitle">PPO-Based MAC Scheduling</h3>
-      <p class="projectInfo">
-        Developed a PPO agent for RB allocation in 5G MAC layer with priority encoding. Optimized HARQ performance and latency.
-      </p>
-      <a href="https://github.com/misbah17311/Intelligent-MAC-Layer-Resource-Block-Allocation" target="_blank" class="projectLink">GitHub</a>
-      <a href="https://drive.google.com/file/d/1gul7y1VvfGcqq-oS-ESe9-4PH840v0NN/view?usp=sharing" target="_blank" class="projectLink">Paper</a>
+  <section id="projects" class="projectsSection">
+    <h2 class="sectionTitle">Projects</h2>
+    <div class="projectsContainer">
+
+      <div class="projectCard">
+        <h3 class="projectTitle">RL Soccer Agents</h3>
+        <p class="projectInfo">Multi-agent PPO soccer using Unity ML-Agents with ONNX deployment.</p>
+        <a href="https://huggingface.co/Misbah17311/AIvsAI" class="projectLink" target="_blank">Source Code</a>
+      </div>
+
+      <div class="projectCard">
+        <h3 class="projectTitle">Freelancer Matcher</h3>
+        <p class="projectInfo">FastAPI-based engine using TF-IDF for job-freelancer fit prediction.</p>
+        <a href="https://github.com/misbah17311/FR" class="projectLink" target="_blank">Source Code</a>
+      </div>
+
+      <div class="projectCard">
+        <h3 class="projectTitle">GenAI Finance Assistant</h3>
+        <p class="projectInfo">RAG-powered tool using FAISS + GPT-2 for contextual financial Q&A.</p>
+        <a href="https://github.com/misbah17311/GENAI" class="projectLink" target="_blank">Source Code</a>
+      </div>
+
+      <div class="projectCard">
+        <h3 class="projectTitle">Rubik’s Cube Solver</h3>
+        <p class="projectInfo">OOP + search-based 3x3 cube solver in C++ with IDA* integration.</p>
+        <a href="https://github.com/misbah17311/CubeSolver" class="projectLink" target="_blank">Source Code</a>
+      </div>
+
+      <div class="projectCard">
+        <h3 class="projectTitle">Energy Forecasting</h3>
+        <p class="projectInfo">Forecasted daily load using ARIMA(2,0,2) & seasonal modeling.</p>
+        <a href="https://github.com/misbah17311/ARIMA" class="projectLink" target="_blank">Source Code</a>
+      </div>
+
+      <div class="projectCard">
+        <h3 class="projectTitle">Restaurant Name Generator</h3>
+        <p class="projectInfo">LLM-powered creative naming tool for food ventures.</p>
+        <a href="https://github.com/misbah17311/Restaurant_name_generator" class="projectLink" target="_blank">Source Code</a>
+      </div>
+
+      <div class="projectCard">
+        <h3 class="projectTitle">AI Retrieval Dashboard</h3>
+        <p class="projectInfo">Streamlit app that uses Groq LLM & ScraperAPI to fetch real-world web data.</p>
+        <a href="https://github.com/misbah17311/BreakoutAI-Assessment-" class="projectLink" target="_blank">Source Code</a>
+      </div>
+
+      <div class="projectCard">
+        <h3 class="projectTitle">Huggy RL Agent</h3>
+        <p class="projectInfo">PPO-trained Unity dog agent deployed on Hugging Face.</p>
+        <a href="https://huggingface.co/Misbah17311/ppo-Huggy" class="projectLink" target="_blank">Source Code</a>
+      </div>
+
+      <div class="projectCard">
+        <h3 class="projectTitle">Q-Learning FrozenLake</h3>
+        <p class="projectInfo">Grid-world Q-Learning agent trained to avoid holes and reach goal.</p>
+        <a href="https://huggingface.co/Misbah17311/q-FrozenLake-v1-4x4-noSlippery" class="projectLink" target="_blank">Source Code</a>
+      </div>
+
+      <div class="projectCard">
+        <h3 class="projectTitle">PPO LunarLander</h3>
+        <p class="projectInfo">Stable-Baselines3 PPO agent trained to land spacecraft safely.</p>
+        <a href="https://huggingface.co/Misbah17311/ppo-LunarLander-v2" class="projectLink" target="_blank">Source Code</a>
+      </div>
+
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="projects" class="projectsSection">
-  <h2 class="sectionTitle">Projects</h2>
-  <div class="projectsContainer">
-
-    <div class="projectCard">
-      <h3 class="projectTitle">RL Soccer Agents</h3>
-      <p class="projectInfo">Multi-agent PPO soccer using Unity ML-Agents with ONNX deployment.</p>
-      <a href="https://huggingface.co/Misbah17311/AIvsAI" class="projectLink" target="_blank">Source Code</a>
+  <section id="skills" class="skillsSection">
+    <h2 class="sectionTitle">Skills</h2>
+    <div class="skillsGrid">
+      <span class="skillTag">Python</span>
+      <span class="skillTag">C++</span>
+      <span class="skillTag">PPO</span>
+      <span class="skillTag">Simu5G</span>
+      <span class="skillTag">OMNeT++</span>
+      <span class="skillTag">Unity ML-Agents</span>
+      <span class="skillTag">FastAPI</span>
+      <span class="skillTag">LangChain</span>
+      <span class="skillTag">ARIMA</span>
+      <span class="skillTag">RLlib</span>
+      <span class="skillTag">GitHub</span>
+      <span class="skillTag">Hugging Face</span>
     </div>
+  </section>
+</main>
 
-    <div class="projectCard">
-      <h3 class="projectTitle">Freelancer Matcher</h3>
-      <p class="projectInfo">FastAPI-based engine using TF-IDF for job-freelancer fit prediction.</p>
-      <a href="https://github.com/misbah17311/FR" class="projectLink" target="_blank">Source Code</a>
-    </div>
-
-    <div class="projectCard">
-      <h3 class="projectTitle">GenAI Finance Assistant</h3>
-      <p class="projectInfo">RAG-powered tool using FAISS + GPT-2 for contextual financial Q&A.</p>
-      <a href="https://github.com/misbah17311/GENAI" class="projectLink" target="_blank">Source Code</a>
-    </div>
-
-    <div class="projectCard">
-      <h3 class="projectTitle">Rubik’s Cube Solver</h3>
-      <p class="projectInfo">OOP + search-based 3x3 cube solver in C++ with IDA* integration.</p>
-      <a href="https://github.com/misbah17311/CubeSolver" class="projectLink" target="_blank">Source Code</a>
-    </div>
-
-    <div class="projectCard">
-      <h3 class="projectTitle">Energy Forecasting</h3>
-      <p class="projectInfo">Forecasted daily load using ARIMA(2,0,2) & seasonal modeling.</p>
-      <a href="https://github.com/misbah17311/ARIMA" class="projectLink" target="_blank">Source Code</a>
-    </div>
-
-    <div class="projectCard">
-      <h3 class="projectTitle">Restaurant Name Generator</h3>
-      <p class="projectInfo">LLM-powered creative naming tool for food ventures.</p>
-      <a href="https://github.com/misbah17311/Restaurant_name_generator" class="projectLink" target="_blank">Source Code</a>
-    </div>
-
-    <div class="projectCard">
-      <h3 class="projectTitle">AI Retrieval Dashboard</h3>
-      <p class="projectInfo">Streamlit app that uses Groq LLM & ScraperAPI to fetch real-world web data.</p>
-      <a href="https://github.com/misbah17311/BreakoutAI-Assessment-" class="projectLink" target="_blank">Source Code</a>
-    </div>
-
-    <div class="projectCard">
-      <h3 class="projectTitle">Huggy RL Agent</h3>
-      <p class="projectInfo">PPO-trained Unity dog agent deployed on Hugging Face.</p>
-      <a href="https://huggingface.co/Misbah17311/ppo-Huggy" class="projectLink" target="_blank">Source Code</a>
-    </div>
-
-    <div class="projectCard">
-      <h3 class="projectTitle">Q-Learning FrozenLake</h3>
-      <p class="projectInfo">Grid-world Q-Learning agent trained to avoid holes and reach goal.</p>
-      <a href="https://huggingface.co/Misbah17311/q-FrozenLake-v1-4x4-noSlippery" class="projectLink" target="_blank">Source Code</a>
-    </div>
-
-    <div class="projectCard">
-      <h3 class="projectTitle">PPO LunarLander</h3>
-      <p class="projectInfo">Stable-Baselines3 PPO agent trained to land spacecraft safely.</p>
-      <a href="https://huggingface.co/Misbah17311/ppo-LunarLander-v2" class="projectLink" target="_blank">Source Code</a>
-    </div>
-
-  </div>
-</section>
-
-<section id="skills" class="skillsSection">
-  <h2 class="sectionTitle">Skills</h2>
-  <div class="skillsGrid">
-    <span class="skillTag">Python</span>
-    <span class="skillTag">C++</span>
-    <span class="skillTag">PPO</span>
-    <span class="skillTag">Simu5G</span>
-    <span class="skillTag">OMNeT++</span>
-    <span class="skillTag">Unity ML-Agents</span>
-    <span class="skillTag">FastAPI</span>
-    <span class="skillTag">LangChain</span>
-    <span class="skillTag">ARIMA</span>
-    <span class="skillTag">RLlib</span>
-    <span class="skillTag">GitHub</span>
-    <span class="skillTag">Hugging Face</span>
-  </div>
-</section>
-
-<section id="contact" class="contactSection">
+<footer id="contact" class="contactSection">
   <h2 class="sectionTitle">Contact</h2>
   <div class="contactContent">
     <p>Let’s connect for opportunities, research, or collabs!</p>
     <div class="contactCards">
 
       <div class="contactCard">
-        <i class="fas fa-envelope contactIcon"></i>
+        <i class="fas fa-envelope contactIcon" aria-hidden="true"></i>
         <a href="mailto:rahmanmisbahur@kgpian.iitkgp.ac.in">rahmanmisbahur@kgpian.iitkgp.ac.in</a>
       </div>
 
       <div class="contactCard">
-        <i class="fas fa-envelope contactIcon"></i>
+        <i class="fas fa-envelope contactIcon" aria-hidden="true"></i>
         <a href="mailto:rahmanmisbahur2005@gmail.com">rahmanmisbahur2005@gmail.com</a>
       </div>
 
       <div class="contactCard">
-        <i class="fab fa-github contactIcon"></i>
+        <i class="fab fa-github contactIcon" aria-hidden="true"></i>
         <a href="https://github.com/misbah17311" target="_blank">github.com/misbah17311</a>
       </div>
 
       <div class="contactCard">
-        <i class="fab fa-linkedin contactIcon"></i>
+        <i class="fab fa-linkedin contactIcon" aria-hidden="true"></i>
         <a href="https://www.linkedin.com/in/misbah-ur-rahman-723a12299/" target="_blank">LinkedIn</a>
       </div>
 
       <div class="contactCard">
-        <i class="fas fa-brain contactIcon"></i>
+        <i class="fas fa-brain contactIcon" aria-hidden="true"></i>
         <a href="https://huggingface.co/Misbah17311" target="_blank">Hugging Face</a>
       </div>
 
     </div>
   </div>
-</section>
-
+</footer>
 </body>
 </html>
