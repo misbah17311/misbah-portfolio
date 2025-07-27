@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Misbah Ur Rahman | AI + Networks Research</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background-color: #0b0c10;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #0b0c10;
+    }
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .project {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .project h3 {
+      margin-top: 0;
+      color: #0b0c10;
+    }
+    .project p {
+      margin: 0.5rem 0;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Misbah Ur Rahman</h1>
+    <p>Pre-final year at IIT Kharagpur | AI for Systems & 5G | RL Enthusiast</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a pre-final year undergraduate at IIT Kharagpur with a strong interest in applying machine learning, reinforcement learning, and optimization to real-world systems like 5G networks. My recent research focuses on PPO-based MAC-layer scheduling using Simu5G and OMNeT++.
+    </p>
+    <p>
+      I enjoy bridging theory and application—whether it's through RL-based network control, time series forecasting, or building GenAI tools. I'm always exploring the intersection of intelligence, systems, and scale.
+    </p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <div class="project">
+      <h3>PPO-Based MAC-Layer Scheduling for 5G</h3>
+      <p>
+        Developed a constraint-aware PPO framework for intelligent RB allocation at the MAC layer in 5G NR networks. Integrated learnable priority weights across ACID, QoS, event type, and service class dimensions, achieving perfect constraint satisfaction and improved HARQ performance.
+      </p>
+      <p><a href="https://github.com/misbah17311/Intelligent-MAC-Layer-Resource-Block-Allocation" target="_blank">GitHub Repository</a> | <a href="#">Read the Paper</a></p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Multi-Agent RL Soccer (Unity ML-Agents)</h3>
+      <p>Trained 2v2 agents using PPO in Unity, learning coordinated strategies with 40% performance gain. Exported final model to ONNX and shared on Hugging Face.</p>
+    </div>
+    <div class="project">
+      <h3>Freelancer Recommendation Engine</h3>
+      <p>Built a FastAPI-based system using TF-IDF and cosine similarity for real-time freelancer-job matching with ranking scores.</p>
+    </div>
+    <div class="project">
+      <h3>GenAI Financial Research Assistant</h3>
+      <p>Developed a LangChain-based RAG tool with GPT-2 + FAISS for context-aware financial article analysis and Q&A.</p>
+    </div>
+    <div class="project">
+      <h3>Rubik’s Cube Solver | AlgoZenith</h3>
+      <p>Designed and modeled a virtual 3×3 Rubik’s Cube in C++ using object-oriented principles and custom data structures.</p>
+      <p>Implemented search algorithms like BFS, DFS, and IDDFS to achieve sub-3 second solving for cubes scrambled up to 8 moves.</p>
+      <p>Integrated Korf’s IDA* algorithm to solve up to 13-move scrambles within 10 seconds consistently.</p>
+      <p><a href="#" target="_blank">Source Code</a></p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: rahmanmisbahur@kgpian.iitkgp.ac.in</p>
+    <p>GitHub: <a href="https://github.com/misbah17311" target="_blank">misbah17311</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/your-link" target="_blank">your-link</a></p>
+    <p>Hugging Face: <a href="https://huggingface.co/your-hf-handle" target="_blank">your-hf-handle</a></p>
+  </section>
+</body>
+</html>
